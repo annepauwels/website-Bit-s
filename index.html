@@ -1,0 +1,57 @@
+# website-Bit-s
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="startpagina" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<title>Startpagina</title>	
+		<link href="CSS/stijlStart.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+        <header>
+         <h1>BIT's</h1>
+         <h2>BIT's where every bit matters</h2> 
+        
+            <p id="Links">
+                <a href="Start.html" target=_self>Startpagina</a>
+                <a href="Diensten.html" target=_self>Diensten</a>
+                <a href="Tarieven.html" target=_self>Tarieven</a> 
+                <a href="Medewerkers.html" target=_self>Medewerkers</a>
+                <a href="Gegevens.html" target=_self>Contact</a></p>
+            
+        </header>
+
+        <h3>Wie zijn wij?</h3>
+        
+        <p>BIT's is een jonge dynamische onderneming die gespecialiseerd is in boekhouding en IT. Wij zijn nog een zeer jonge onderneming (opgericht in 2019) maar dit geeft ons nieuwe inzichten. Ons team bestaat uit 8 ambitieuse medewerkers die elke dag alles van zichzelf geven voor een goede samenwerking binnen het bedrijf. Wij dragen klantvriendelijkheid hoog in het vaandel. Bij ons zal u altijd de beste service aan de laagste prijs vinden. Wij zullen u altijd zo spoedig mogelijk helpen en er steeds alles aan doen om uw werk te verlichten. </p>
+        
+        <div class="w3-content w3-section" style="max-width:500px">
+         <img class="slideshowfoto" src="Images/dia%20BIT's.jpg">
+         <img class="slideshowfoto" id="draai" src="Images/proacc.jpg">
+         <img class="slideshowfoto" src="Images/groepsfoto_edited.jpg">
+       </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshowfoto");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+
+        
+        <img id="logo" src="Images/logo%20(1).png" alt="logo BIT's">
+        
+    </body>
+</html>
